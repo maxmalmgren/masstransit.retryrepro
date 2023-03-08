@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+	  <TargetFramework>net6.0</TargetFramework>
+	  <Platforms>AnyCPU;x64</Platforms>
+	  <ImplicitUsings>enable</ImplicitUsings>
+	  <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Transfer\**" />
+    <EmbeddedResource Remove="Transfer\**" />
+    <None Remove="Transfer\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+	  <PackageReference Include="MassTransit" Version="8.0.13" />
+	  <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.2.0" />
+	  <PackageReference Include="NUnit" Version="3.13.3" />
+	  <PackageReference Include="NUnit3TestAdapter" Version="4.2.1" />
+	  <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="6.0.9" />
+	  <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="6.0.0" />
+	  <PackageReference Include="Moq" Version="4.16.1" />
+  </ItemGroup>
+
+</Project>
